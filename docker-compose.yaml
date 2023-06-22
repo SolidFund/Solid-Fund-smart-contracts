@@ -1,0 +1,54 @@
+version: "3"
+
+networks:
+  prices:
+    driver: bridge
+
+services:
+  aggregator:
+    container_name: aggregator
+    build:
+      context: ./aggregator
+    ports:
+      - "5000:5000"
+    environment:
+      PRICE_FEEDS: "http://amazon:3000/products,http://ebay:3000/products,http://walmart:3000/products"
+    networks:
+      - prices
+  amazon:
+    container_name: amazon
+    build:
+      context: ./aggregator/providers/amazon
+    networks:
+      - prices
+  ebay:
+    container_name: ebay
+    build:
+      context: ./aggregator/providers/ebay
+    networks:
+      - prices
+  walmart:
+    container_name: walmart
+    build:
+      context: ./aggregator/providers/walmart
+    networks:
+      - prices
+  metadata:
+    container_name: metadata
+    build:
+      context: ./metadata
+    ports:
+      - "4000:3000"
+  blockchain:
+    container_name: blockchain
+    build:
+      context: ./crowdfund
+    ports:
+      - "8545:8545"
+  bootstrap:
+    container_name: bootstrap
+    build:
+      context: ./crowdfund
+    command: npx hardhat run --network docker scripts/deploy_local.js
+    depends_on:
+      - blockchain
