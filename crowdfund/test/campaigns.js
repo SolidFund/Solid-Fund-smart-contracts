@@ -21,7 +21,7 @@ describe("Campaigns", async () => {
 
     const campaign = await crowdfund.campaigns(1);
 
-    // Verify the campaign details
+    // Verify the campaigns details
 
     expect(campaign.goals).to.equal(1);
     expect(campaign.startAt).to.equal(startAt);
