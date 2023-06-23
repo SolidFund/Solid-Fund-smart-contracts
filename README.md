@@ -2,11 +2,11 @@
 
 [![Contract workflow](https://github.com/SolidFund/Solid-Fund-smart-contracts/actions/workflows/contract.yaml/badge.svg)](https://github.com/SolidFund/Solid-Fund-smart-contracts/actions/workflows/contract.yaml)
 
-This project implements a crowdfunding platform that allows users to create and participate in fundraising campaigns. The smart contract leverages the Chainlink ecosystem by using the Chainlink Price Feed contract for price conversions.
+This project implements a crowdfunding platform that allows users to create and participate in fundraising campaigns. The smart contract leverages the Chainlink ecosystem by using the Chainlink Price Feed contract for price conversions and OpenZeppelin Defender to automate the off-chain execution.
 
 ## Project Description
 
-The CrowdFund smart contract enables users to create fundraising campaigns for social projects with specified goals and durations. Participants can pledge funds to these campaigns, either in Ether or a specified ERC20 stable token. The progress of each campaign is tracked, and when a campaign meets its goals, the creator can claim the funds one by one and provide proof of achieving the campaign's objective. Validators can review the proof and validate or invalidate the goal accordingly.
+The Solid Fund smart contract enables users to create fundraising campaigns for social projects with specified goals and durations. Participants can pledge funds to these campaigns, either in Glimmer (GLMR) or a specified ERC20 stable token. The progress of each campaign is tracked, and when a campaign meets its goals, the creator can claim the funds one by one and provide proof of achieving the campaign's objective. Validators can review the proof and validate or invalidate the goal accordingly.
 
 ## Features
 
@@ -24,7 +24,7 @@ Once a campaign is created, the creator can add multiple goals with correspondin
 
 ### Pledging
 
-Users can pledge funds to ongoing campaigns by contributing Ether or ERC20 tokens.
+Users can pledge funds to ongoing campaigns by contributing Glimmer (GLMR) or ERC20 tokens.
 
 ### Unpledging
 
@@ -84,16 +84,14 @@ The user who donates to a campaign.
 
 ### Automation
 
-**Currently, ChainLink Automation is not supported in Moonbean/Moonriver/Moonbase.** Therefore, we're using OpenZeppelin Defender (Relayer and Autotask) to automate the execution of the method "updateCampaigns".
-
-![automation](docs/images/chainlink.png)
+We're using OpenZeppelin Defender (Relayer and Autotask) to automate the execution of the method "updateCampaigns".
 
 ![relayer](docs/images/openzeppelin/relayer.png)
 ![autotaskautomation](docs/images/openzeppelin/autotask.png)
 
 ## Smart Contract Dependencies
 
-The CrowdFund smart contract relies on the following external contracts and libraries:
+The Solid Fund smart contract relies on the following external contracts and libraries:
 
 ### OpenZeppelin Contracts
 
@@ -121,7 +119,7 @@ An interface for interacting with ERC20 tokens.
 
 ### Architecture
 
-The user interacts with the contract by using a front-end. Optionally, they can use the verified contract directly. The campaign's goals are obtained from an aggregator that is a service that gets some products from validated markets. The final solution involves Chainlink Automation but it's not supported yet ([Read Chainlink automation section](#chainlink-automation)). Meanwhile, we're using OpenZeppelin Defender with an autotask executed by a relayer (the autotask code is [here](automation/index.js))
+The user interacts with the contract by using a front-end. Optionally, they can use the verified contract directly. The campaign's goals are obtained from an aggregator that is a service that gets some products from validated markets. We're using OpenZeppelin Defender with an autotask executed by a relayer (the autotask code is [here](automation/index.js))
 
 ![design](docs/images/design.png)
 
@@ -129,7 +127,7 @@ The user interacts with the contract by using a front-end. Optionally, they can 
 
 - Solidity: Smart Contract
 - Hardhat: Deploy and verification of the contracts
-- ChainLink: data feed and automation
+- ChainLink: data feed
 - OpenZeppelin: contracts and Defender (Autotask and Relayer)
 - React: front-end
 - Third-web: web framework
@@ -142,9 +140,9 @@ The user interacts with the contract by using a front-end. Optionally, they can 
 
 ### Description
 
-The CrowdFund smart contract allows users to create crowdfunding campaigns, pledge funds or tokens to campaigns, vote for campaigns, add campaign goals, and claim goals based on the campaign's success. The contract includes role-based access control and pause functionality to ensure secure and controlled operations. All the metadata related to the campaign is saved in a different service called "metadata API".
+The Solid Fund smart contract allows users to create crowdfunding campaigns, pledge Glimmer (GLMR) or ERC-20 tokens to campaigns, vote for campaigns, add campaign goals, and claim goals based on the campaign's success. The contract includes role-based access control and pause functionality to ensure secure and controlled operations. All the metadata related to the campaign is saved in a different service called "metadata API".
 
-Finally, the solution uses ChainLink data price feeds to convert the Ether price to usd when the creator wants to claim a goal and also the Chainlink Automation to execute the contract off-chain and update the campaign status.
+Finally, the solution uses ChainLink data price feeds to convert the Glimmer (GLMR) price to USD when the creator wants to claim a goal and also OpenZeppelin Defender to execute the contract off-chain and update the campaign status.
 
 ### Methods
 
@@ -160,13 +158,12 @@ Finally, the solution uses ChainLink data price feeds to convert the Ether price
 
 #### Donations
 
-- `pledge(uint256 _id, uint256 _amount)`: Allows users to pledge funds or tokens to a started campaign.
-- `unpledge(uint256 _id)`: Allows users to unpledge their funds or tokens from a campaign that is either finished or invalid.
+- `pledge(uint256 _id, uint256 _amount)`: Allows users to pledge Glimmer (GLMR) or tokens to a started campaign.
+- `unpledge(uint256 _id)`: Allows users to unpledge their Glimmer (GLMR) or tokens from a campaign that is either finished or invalid.
 
 #### Validations
 
-- `validateProof(uint256 _id, uint256 _goal_id, GoalStatus _status)`: Allows a validator to
-  validate or invalidate the proof attached to a goal.
+- `validateProof(uint256 _id, uint256 _goal_id, GoalStatus _status)`: Allows a validator to validate or invalidate the proof attached to a goal.
 
 #### Votes
 
@@ -191,7 +188,7 @@ Finally, the solution uses ChainLink data price feeds to convert the Ether price
 
 ### Dependencies
 
-The CrowdFund smart contract has the following dependencies:
+The Solid Fund smart contract has the following dependencies:
 
 - OpenZeppelin Contracts: Provides base contracts for Ownable, Pausable, and AccessControl functionalities.
 - Chainlink Contracts: Provides the AggregatorV3Interface for price feed data.
@@ -202,14 +199,14 @@ The solution isn't placed in Moonbase mainnet yet.
 
 ## Testnet
 
-Currenly we're using Moonbase ALpha testnet:
+Currenly we're using Moonbase Alpha testnet:
 
 - MockERC20 deployed to 0xF2e43E5e222E5f0B4584315637C569f66938835F
-- Crowdfund deployed to 0xb390F2d000d6d5b6fAd0717Fad290B64DE8e613c
+- Solid Fund deployed to 0xb390F2d000d6d5b6fAd0717Fad290B64DE8e613c
 
 ### Verification
 
-**Crowdfund**
+**Solid Fund**
 `npx hardhat verify --network moonbase --contract contracts/Crowdfund.sol:CrowdFund 0xb390F2d000d6d5b6fAd0717Fad290B64DE8e613c 0xF2e43E5e222E5f0B4584315637C569f66938835F 6048000 1 0x537879A0beA294c1ce04161Ae827919e92C23e92`
 
 **MockERC20**
@@ -262,7 +259,7 @@ This service will save the metadata for the campaign (name, description, etc). T
 
 ## Contributing
 
-Thank you for considering contributing to the CrowdFund project! Contributions are highly encouraged and welcome. Here are a few ways you can contribute:
+Thank you for considering contributing to the Solid Fund project! Contributions are highly encouraged and welcome. Here are a few ways you can contribute:
 
 - Report issues: Help identify and report any bugs or issues you encounter while using the platform by opening an issue in the repository.
 
