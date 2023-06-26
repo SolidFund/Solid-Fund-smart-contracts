@@ -61,7 +61,7 @@ In summary, the crowdfunding platform would address issues related to access to 
 
 The Solid Fund smart contract enables users to create fundraising campaigns for social projects with specified goals and durations. Participants can pledge funds to these campaigns, either in Glimmer (GLMR) or a specified ERC20 stable token (while the smart contracts are deployed on Moonbase Alpha "DEV" is the token used). The progress of each campaign is tracked, and when a campaign meets its goals, the creator can claim the funds and provide proof of achieving the campaign's objective. Validators can review the proof and validate or invalidate the goal accordingly.
 
-# During the construction of the project, we faced several significant challenges. Some of the notable challenges included
+## During the construction of the project, we faced several significant challenges. Some of the notable challenges included
 
 1. Fund security: Ensuring the security of donor funds and the authenticity of the presented projects was a major challenge. We had to implement rigorous verification and tracking measures to protect donors from scams and ensure that the funds were appropriately allocated to the funded projects.
 
