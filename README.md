@@ -2,7 +2,60 @@
 
 [![Contract workflow](https://github.com/SolidFund/Solid-Fund-smart-contracts/actions/workflows/contract.yaml/badge.svg)](https://github.com/SolidFund/Solid-Fund-smart-contracts/actions/workflows/contract.yaml)
 
-This project implements a crowdfunding platform that allows users to create and to participate in fundraising campaigns. The smart contract leverages the Moonbeam  ecosystem, the project uses Chainlink Price Feed contract for price conversions and OpenZeppelin Defender to automate the off-chain execution.
+This project implements a crowdfunding platform that allows users to create fundraising campaigns and to participate as donors in them. The smart contract leverages the Moonbeam technology, the project uses Chainlink Price Feed contract for price conversions and OpenZeppelin Defender to automate the off-chain execution.
+
+## Our Story 
+
+The project was inspired by the inequity and difficulties faced by marginalized communities in accessing financing and resources for their social projects. The lack of opportunities limited their ability to generate positive impact and improve their living conditions. This reality sparked the desire to build a crowdfunding platform that could eliminate barriers and connect social entrepreneurs with committed donors globally. The inspiration came from the belief in the power of collective support and solidarity to create significant change in the most vulnerable communities. The project was developed with the purpose of providing equal opportunities and promoting collaboration to drive socially positive and sustainable projects.
+
+Our project is a crowdfunding platform that connects social entrepreneurs with committed donors. We facilitate fundraising for social projects, allowing people to present their ideas and obtain the necessary financial support to make them a reality. Our platform provides a transparent, secure, and efficient form of financing, and aims to promote active community participation in decision-making. By bringing project creators and donors together, we drive the generation of innovative and sustainable solutions for social challenges, thereby improving the quality of life in communities and generating a positive impact on society.
+
+The project was built by defining the project's vision, mission, and values, establishing the objectives and goals we wanted to achieve. Then, we conducted thorough research on crowdfunding and the challenges it faced, identifying opportunities for improvement.
+
+Based on this research, we designed the crowdfunding platform, focusing on the Moonbeam blockchain to ensure transparency and security in transactions. We carry out the technical implementation of the platform, ensuring that it met the required standards of quality and functionality.
+
+## About SolidFund
+
+Our project is based on the implementation of a crowdfunding platform that addresses the main issues associated with traditional crowdfunding. We believe in the importance of providing access to funding for social projects and fostering community participation in decision-making.
+
+In our approach, we strive to overcome geographical barriers that limit project reach by allowing initiatives to reach a global audience. We want to provide social projects with the opportunity to obtain funds internationally and maximize their fundraising potential.
+
+Transparency is a fundamental value for us. Through the use of Moonbeam technology, we aim to provide a high level of transparency and traceability in the fundraising process. We want donors to easily verify how funds are being utilized and if campaign objectives are being met.
+
+Furthermore, we believe in active community participation. We want to give donors a voice and a vote in decisions related to funded projects. We aim to foster community connection and involvement to build a platform that reflects the needs and desires of its users.
+
+Protection against scams and fraudulent projects is a priority for us. We will implement robust security and verification measures to ensure the authenticity of projects presented on our platform. We want to give donors the confidence that their contributions will be used appropriately and for the intended purposes.
+
+In summary, we are committed to overcoming the challenges associated with traditional crowdfunding and providing a more accessible, transparent, and participatory platform. We are excited to drive efficient fundraising and support social projects that seek to generate a positive impact on society.
+
+
+## Problem description 
+
+Main problems of traditional crowdfunding:
+
+1. Geographical barriers: Traditional crowdfunding often limits itself to a specific region or country, making it difficult for projects to reach a global audience and limiting their fundraising potential.
+
+2. Lack of transparency: Traditional funding processes may lack transparency regarding how raised funds are utilized. Donors may have difficulties in tracking and verifying the use of funds by project creators.
+
+3. Limited community participation: In many cases, donors in traditional crowdfunding have no voice or vote in decisions related to funded projects. Community participation is limited, which can result in a lack of connection and involvement.
+
+4. Insufficient protection against scams: Risks of scams and fraudulent projects exist in traditional crowdfunding. Donors can become victims of scammers who present false or deceptive projects and disappear once they have collected the funds.
+
+## Solution or how the project helps to solve the problem 
+
+SolidFund would address the following points:
+
+1. Access to funding: It would provide social projects with an opportunity to obtain funds to carry out their initiatives. Many social projects lack the necessary financial resources, and this platform would offer them a way to access the necessary support.
+
+2. Transparency: By utilizing Moonbeam technology, the platform could provide a level of transparency and traceability in the fundraising process. Participants would be able to easily verify how funds are being utilized and if campaign goals are being achieved.
+
+3. Goal validation: The platform would allow campaign goals to be validated by participants and validators. This would ensure that funded projects have clear objectives and that funds are effectively used to achieve those goals.
+
+4. Community participation: By enabling users to vote for campaigns they believe should be funded, the platform would encourage community participation in decision-making and project selection. This creates a sense of community and empowerment among participants.
+
+5. Fund security: The platform could guarantee the security of funds raised. Participants can have confidence that their contributions are protected and will be used appropriately.
+
+In summary, the crowdfunding platform would address issues related to access to funding, transparency, goal validation, community participation, and fund security in the realm of social projects.
 
 ## Project Description
 
