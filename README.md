@@ -2,11 +2,11 @@
 
 [![Contract workflow](https://github.com/SolidFund/Solid-Fund-smart-contracts/actions/workflows/contract.yaml/badge.svg)](https://github.com/SolidFund/Solid-Fund-smart-contracts/actions/workflows/contract.yaml)
 
-This project implements a crowdfunding platform that allows users to create and participate in fundraising campaigns. The smart contract leverages the Chainlink ecosystem by using the Chainlink Price Feed contract for price conversions and OpenZeppelin Defender to automate the off-chain execution.
+This project implements a crowdfunding platform that allows users to create and to participate in fundraising campaigns. The smart contract leverages the Moonbeam  ecosystem, the project uses Chainlink Price Feed contract for price conversions and OpenZeppelin Defender to automate the off-chain execution.
 
 ## Project Description
 
-The Solid Fund smart contract enables users to create fundraising campaigns for social projects with specified goals and durations. Participants can pledge funds to these campaigns, either in Glimmer (GLMR) or a specified ERC20 stable token (while the smart contracts are deployed on Moonbase Alpha "DEV" is the token used). The progress of each campaign is tracked, and when a campaign meets its goals, the creator can claim the funds one by one and provide proof of achieving the campaign's objective. Validators can review the proof and validate or invalidate the goal accordingly.
+The Solid Fund smart contract enables users to create fundraising campaigns for social projects with specified goals and durations. Participants can pledge funds to these campaigns, either in Glimmer (GLMR) or a specified ERC20 stable token (while the smart contracts are deployed on Moonbase Alpha "DEV" is the token used). The progress of each campaign is tracked, and when a campaign meets its goals, the creator can claim the funds and provide proof of achieving the campaign's objective. Validators can review the proof and validate or invalidate the goal accordingly.
 
 ## Features
 
@@ -190,8 +190,8 @@ Finally, the solution uses ChainLink data price feeds to convert the Glimmer (GL
 
 The Solid Fund smart contract has the following dependencies:
 
-- OpenZeppelin Contracts: Provides base contracts for Ownable, Pausable, and AccessControl functionalities.
 - Chainlink Contracts: Provides the AggregatorV3Interface for price feed data.
+- OpenZeppelin Contracts: Provides base contracts for Ownable, Pausable, and AccessControl functionalities.
 
 ## Production
 
