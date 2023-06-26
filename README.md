@@ -66,7 +66,7 @@ The Solid Fund smart contract enables users to create fundraising campaigns for 
 
 2. Project selection and evaluation: Ensuring the quality and impact of the projects presented on the platform was a significant challenge. We had to research organizations in the field of social projects to strengthen our selection and evaluation processes, ensuring that we supported only viable projects with a positive impact on society.
 
-3.
+3. Automation: we have a method that updates all the campaigns' status. We need to execute it daily so that we need a way to automate it. We realized that ChainLink Automation isn't compatible with Moonbean/Moonbase so we had to look for another tool. Alberto Viera, who is working on this hackathon, suggested us to use OpenZepplin Defender and we made it.
 
 ## We are proud to have achieved the following milestones in our project
 
