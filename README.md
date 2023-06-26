@@ -6,7 +6,7 @@ This project implements a crowdfunding platform that allows users to create and 
 
 ## Project Description
 
-The Solid Fund smart contract enables users to create fundraising campaigns for social projects with specified goals and durations. Participants can pledge funds to these campaigns, either in Glimmer (GLMR) or DOT. The progress of each campaign is tracked, and when a campaign meets its goals, the creator can claim the funds one by one and provide proof of achieving the campaign's objective. Validators can review the proof and validate or invalidate the goal accordingly.
+The Solid Fund smart contract enables users to create fundraising campaigns for social projects with specified goals and durations. Participants can pledge funds to these campaigns, either in Glimmer (GLMR) or a specified ERC20 stable token (while the smart contracts are deployed on Moonbase Alpha "DEV" is the token used). The progress of each campaign is tracked, and when a campaign meets its goals, the creator can claim the funds one by one and provide proof of achieving the campaign's objective. Validators can review the proof and validate or invalidate the goal accordingly.
 
 ## Features
 
@@ -24,7 +24,7 @@ Once a campaign is created, the creator can add multiple goals with correspondin
 
 ### Pledging
 
-Users can pledge funds to ongoing campaigns by contributing Glimmer (GLMR) or DOT.
+Users can pledge funds to ongoing campaigns by contributing Glimmer (GLMR) or a specified ERC20 stable token (while the smart contracts are deployed on Moonbase Alpha "DEV" is the token used).
 
 ### Unpledging
 
@@ -142,7 +142,7 @@ The user interacts with the contract by using a front-end. Optionally, they can 
 
 The Solid Fund smart contract allows users to create crowdfunding campaigns, pledge Glimmer (GLMR) or ERC-20 tokens to campaigns, vote for campaigns, add campaign goals, and claim goals based on the campaign's success. The contract includes role-based access control and pause functionality to ensure secure and controlled operations. All the metadata related to the campaign is saved in a different service called "metadata API".
 
-Finally, the solution uses ChainLink data price feeds to convert the Glimmer (GLMR) or DOT price to USD when the creator wants to claim a goal and also OpenZeppelin Defender to execute the contract off-chain and update the campaign status.
+Finally, the solution uses ChainLink data price feeds to convert the Glimmer (GLMR) or the specified ERC20 stable token (while the smart contracts are deployed on Moonbase Alpha "DEV" is the token used) price to USD when the creator wants to claim a goal and also OpenZeppelin Defender to execute the contract off-chain and update the campaign status.
 
 ### Methods
 
