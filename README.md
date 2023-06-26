@@ -2,9 +2,9 @@
 
 [![Contract workflow](https://github.com/SolidFund/Solid-Fund-smart-contracts/actions/workflows/contract.yaml/badge.svg)](https://github.com/SolidFund/Solid-Fund-smart-contracts/actions/workflows/contract.yaml)
 
-This project implements a crowdfunding platform that allows users to create fundraising campaigns and to participate as donors in them. The smart contract leverages the Moonbeam technology, the project uses Chainlink Price Feed contract for price conversions and OpenZeppelin Defender to automate the off-chain execution.
+This project implements a crowdfunding platform that allows users to create fundraising campaigns and to participate as donors in them. The smart contract leverages the Moonbeam technology, the project uses Chainlink Price Feed contract for price conversions and OpenZeppelin Defender to automate the execution of our smart contract.
 
-## Our Story 
+## Our Story
 
 The project was inspired by the inequity and difficulties faced by marginalized communities in accessing financing and resources for their social projects. The lack of opportunities limited their ability to generate positive impact and improve their living conditions. This reality sparked the desire to build a crowdfunding platform that could eliminate barriers and connect social entrepreneurs with committed donors globally. The inspiration came from the belief in the power of collective support and solidarity to create significant change in the most vulnerable communities. The project was developed with the purpose of providing equal opportunities and promoting collaboration to drive socially positive and sustainable projects.
 
@@ -28,8 +28,7 @@ Protection against scams and fraudulent projects is a priority for us. We will i
 
 In summary, we are committed to overcoming the challenges associated with traditional crowdfunding and providing a more accessible, transparent, and participatory platform. We are excited to drive efficient fundraising and support social projects that seek to generate a positive impact on society.
 
-
-## Problem description 
+## Problem description
 
 Main problems of traditional crowdfunding:
 
@@ -41,7 +40,7 @@ Main problems of traditional crowdfunding:
 
 4. Insufficient protection against scams: Risks of scams and fraudulent projects exist in traditional crowdfunding. Donors can become victims of scammers who present false or deceptive projects and disappear once they have collected the funds.
 
-## Solution or how the project helps to solve the problem 
+## Solution or how the project helps to solve the problem
 
 SolidFund would address the following points:
 
@@ -67,26 +66,28 @@ The Solid Fund smart contract enables users to create fundraising campaigns for 
 
 2. Project selection and evaluation: Ensuring the quality and impact of the projects presented on the platform was a significant challenge. We had to research organizations in the field of social projects to strengthen our selection and evaluation processes, ensuring that we supported only viable projects with a positive impact on society.
 
+3.
+
 ## We are proud to have achieved the following milestones in our project
 
-1. Transparency and trust: We have established high standards of transparency in fund management and communication with donors. 
-2. Technological innovation: We have incorporated advanced technologies into our platform,  to enhance security, transparency, and efficiency in the funding process.
+1. Transparency and trust: We have established high standards of transparency in fund management and communication with donors.
+2. Technological innovation: We have incorporated advanced technologies into our platform, to enhance security, transparency, and efficiency in the funding process.
 
-## Our Website  
+## Our Website
 
-https://moonbest.vercel.app/  
+https://moonbest.vercel.app/
 
 ## Our Team
 
-Leandro Palazzolo - lea.palazzolo@gmail.com - https://github.com/leapalazzolo 
-Matias Guagliardo - matias.guagliardo@gmail.com - https://github.com/Mattteus1 
-Gustavo Matta - linkzelda2016o@gmail.com - https://github.com/BetX19 
-Robert Medina - csoperativo@gmail.com - https://github.com/shaggyt85 	
-
+Leandro Palazzolo - lea.palazzolo@gmail.com - https://github.com/leapalazzolo
+Matias Guagliardo - matias.guagliardo@gmail.com - https://github.com/Mattteus1
+Gustavo Matta - linkzelda2016o@gmail.com - https://github.com/BetX19
+Robert Medina - csoperativo@gmail.com - https://github.com/shaggyt85
 
 ## Our Plans for the Future
 
 3rt Quarter 2023:
+
 1. Launch of the crowdfunding platform and its promotion at a national and international level.
 2. Implementation of security and verification measures to ensure the authenticity of projects and protect donors from scams.
 3. Establishment of transparent processes for fund management and monitoring the achievement of funded project objectives.
@@ -95,13 +96,13 @@ Robert Medina - csoperativo@gmail.com - https://github.com/shaggyt85
 6. Organization of events and activities to raise awareness about the project and garner support from donors and sponsors.
 
 4th Quarter 2023:
+
 1. Geographic expansion of the platform, aiming to reach a global audience and overcome traditional geographical barriers.
 2. Implementation of feedback and evaluation mechanisms by donors and beneficiaries of funded projects.
 3. Continuous improvement of the platform, based on user feedback and suggestions.
 4. Exploration of new integrations and technologies to expand functionalities and enhance user experience.
 5. Establishment of strategic partnerships with financial institutions and government entities to strengthen access to funding and additional resources.
 6. Evaluation of the social impact generated by projects funded through the platform and dissemination of the results.
-
 
 1st Quarter 2024:
 
@@ -111,7 +112,6 @@ Robert Medina - csoperativo@gmail.com - https://github.com/shaggyt85
 4. Development of training and mentoring programs for project creators, providing them with resources and knowledge to optimize their campaigns.
 5. Research and evaluation of new financing opportunities, such as partnerships with impact investors, grant programs, and specific funds.
 6. Expansion of communication channels and promotion of the project, including participation in events and the creation of relevant content to raise awareness and attract new donors.
-
 
 ## Features
 
@@ -247,7 +247,7 @@ The user interacts with the contract by using a front-end. Optionally, they can 
 
 The Solid Fund smart contract allows users to create crowdfunding campaigns, pledge Glimmer (GLMR) or ERC-20 tokens to campaigns, vote for campaigns, add campaign goals, and claim goals based on the campaign's success. The contract includes role-based access control and pause functionality to ensure secure and controlled operations. All the metadata related to the campaign is saved in a different service called "metadata API".
 
-Finally, the solution uses ChainLink data price feeds to convert the Glimmer (GLMR) or the specified ERC20 stable token (while the smart contracts are deployed on Moonbase Alpha "DEV" is the token used) price to USD when the creator wants to claim a goal and also OpenZeppelin Defender to execute the contract off-chain and update the campaign status.
+Finally, the solution uses ChainLink data price feeds to convert the Glimmer (GLMR) or the specified ERC20 token price to USD when the creator wants to claim a goal and also OpenZeppelin Defender to automate the execution of the contract so that the campaigns' status are updated.
 
 ### Methods
 
@@ -263,8 +263,8 @@ Finally, the solution uses ChainLink data price feeds to convert the Glimmer (GL
 
 #### Donations
 
-- `pledge(uint256 _id, uint256 _amount)`: Allows users to pledge Glimmer (GLMR) or tokens to a started campaign.
-- `unpledge(uint256 _id)`: Allows users to unpledge their Glimmer (GLMR) or tokens from a campaign that is either finished or invalid.
+- `pledge(uint256 _id, uint256 _amount)`: Allows users to pledge Glimmer (GLMR) or ERC-20 tokens to a started campaign.
+- `unpledge(uint256 _id)`: Allows users to unpledge their Glimmer (GLMR) or ERC-20 tokens from a campaign that is either finished or invalid.
 
 #### Validations
 
