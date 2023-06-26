@@ -116,7 +116,7 @@ const CampaignDetails = ({
                 </div>
                 <div className="bg-[#0e0a03b9] rounded-[10px] p-[20px]">
                   <h4 className="font-epilogue font-semibold text-[18px] text-white   uppercase ">
-                    Donators
+                    Donors
                   </h4>
                   <div className="mt-[20px] flex flex-col gap-4">
                     {/* {isDonators.length > 0 ? (
@@ -156,7 +156,7 @@ const CampaignDetails = ({
                   <div className="mt-[30px]">
                     <input
                       type="number"
-                      placeholder="ETH 0.1"
+                      placeholder="GLMR 0.1"
                       step="0.01"
                       className="w-full py-[10px] sm:px-[20px] px-[15px] outline-none border-[1px] border-[#3a3a43] bg-transparent font-epilogue  text-[18px] leading-[30px] placeholder:text-[#ffffff] rounded-[10px]"
                       // value={isAmount}

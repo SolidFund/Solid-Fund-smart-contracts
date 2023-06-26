@@ -1,5 +1,4 @@
-import React from "react";
-import About1 from "@/public/images/About1.jpg";
+import about1 from "@/public/images/About1.jpg";
 import about2 from "@/public/images/about2.jpg";
 import Image from "next/image";
 
@@ -42,66 +41,35 @@ const About = () => {
                       mb-5
                     "
                   >
-                    About Us
+                    About SolidFund
                   </h1>
                   <p className="text-[1rem] text-left text-body-color mb-9 leading-relaxed">
-                    Our project is based on the implementation of a crowdfunding
-                    platform that addresses the main issues associated with
-                    traditional crowdfunding.
+                  Our project is based on the implementation of a crowdfunding platform that addresses the main issues associated with traditional crowdfunding. We believe in the importance of providing access to funding for social projects and fostering community participation in decision-making.
                   </p>
                   <p className="text-[1rem] text-left text-body-color mb-9 leading-relaxed">
-                    Our project is based on the implementation of a crowdfunding
-                    platform that addresses the main issues associated with
-                    traditional crowdfunding. We believe in the importance of
-                    providing access to funding for social projects and
-                    fostering community participation in decision-making.
+                  In our approach, we strive to overcome geographical barriers that limit project reach by allowing initiatives to reach a global audience. We want to provide social projects with the opportunity to obtain funds internationally and maximize their fundraising potential
                   </p>
                   <p className="text-[1rem] text-left text-body-color mb-9 leading-relaxed">
-                    In our approach, we strive to overcome geographical barriers
-                    that limit project reach by allowing initiatives to reach a
-                    global audience. We want to provide social projects with the
-                    opportunity to obtain funds internationally and maximize
-                    their fundraising potential.
+                  Transparency is a fundamental value for us. Through the use of Moonbeam technology, we aim to provide a high level of transparency and traceability in the fundraising process. We want donors to easily verify how funds are being utilized and if campaign objectives are being met.
                   </p>
                   <p className="text-[1rem] text-left text-body-color mb-9 leading-relaxed">
-                    Transparency is a fundamental value for us. Through the use
-                    of smart contracts and integration with Chainlink
-                    technology, we aim to provide a high level of transparency
-                    and traceability in the fundraising process. We want donors
-                    to easily verify how funds are being utilized and if
-                    campaign objectives are being met.
+                  Furthermore, we believe in active community participation. We want to give donors a voice and a vote in decisions related to funded projects. We aim to foster community connection and involvement to build a platform that reflects the needs and desires of its users.
                   </p>
                   <p className="text-[1rem] text-left text-body-color mb-9 leading-relaxed">
-                    Furthermore, we believe in active community participation.
-                    We want to give donors a voice and a vote in decisions
-                    related to funded projects. We aim to foster community
-                    connection and involvement to build a platform that reflects
-                    the needs and desires of its users.
+                  Protection against scams and fraudulent projects is a priority for us. We will implement robust security and verification measures to ensure the authenticity of projects presented on our platform. We want to give donors the confidence that their contributions will be used appropriately and for the intended purposes.
                   </p>
                   <p className="text-[1rem] text-left text-body-color mb-9 leading-relaxed">
-                    Protection against scams and fraudulent projects is a
-                    priority for us. We will implement robust security and
-                    verification measures to ensure the authenticity of projects
-                    presented on our platform. We want to give donors the
-                    confidence that their contributions will be used
-                    appropriately and for the intended purposes.
-                  </p>
-                  <p className="text-[1rem] text-left text-body-color mb-9 leading-relaxed">
-                    In summary, as a team of this crowdfunding project, we are
-                    committed to overcoming the challenges associated with
-                    traditional crowdfunding and providing a more accessible,
-                    transparent, and participatory platform. We are excited to
-                    utilize smart contracts and innovative technologies to drive
-                    efficient fundraising and support social projects that seek
-                    to generate a positive impact on society.
+                  In summary, we are committed to overcoming the challenges associated with traditional crowdfunding and providing a more accessible, transparent, and participatory platform. We are excited to drive efficient fundraising and support social projects that seek to generate a positive impact on society.
                   </p>
                 </div>
                 <div className="text-center">
                   <div className="relative inline-block z-10 p-4">
                     <Image
-                      src={About1}
+                      src={about1}
                       alt="image"
                       className="mx-auto lg:ml-auto"
+                      width={500}
+                      height={500}
                     />
                   </div>
                 </div>
@@ -183,6 +151,8 @@ const About = () => {
                       src={about2}
                       alt="image"
                       className="mx-auto lg:ml-auto"
+                      width={500}
+                      height={500}
                     />
                   </div>
                 </div>

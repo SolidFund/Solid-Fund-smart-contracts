@@ -1,6 +1,4 @@
-import { About } from '@/app/Components'
-import React from 'react'
-
+import  { About }  from '@/app/Components'
 const page = () => {
   return (
     <div><About /></div>

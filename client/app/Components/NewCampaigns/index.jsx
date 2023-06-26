@@ -1,8 +1,6 @@
 'use client'
 import { useState } from 'react'
 import { FormFieldCamapigns, CustomButton } from '..';
-import { storage } from '@/firebase.config';
-import { deleteObject, getDownloadURL, ref, uploadBytesResumable } from 'firebase/storage'
 import { saveItem } from '@/app/utils/firebaseFunction';
 import { useStateContext } from '@/app/Context/Thirdweb';
 import { ethers } from 'ethers';
@@ -16,7 +14,7 @@ const NewCampaigns = () => {
   const [fields, setFields] = useState(false)
   const [alertStatus, setAlertStatus] = useState('danger')
   const [msg, setMsg] = useState(null)
-  const {campaigns, userCampaigns } = useThemeContext()
+  const {campaigns } = useThemeContext()
   const {address, create } = useStateContext()
   const [isForm, setIsForm] = useState({
     address: address,
@@ -83,7 +81,6 @@ const NewCampaigns = () => {
     } catch (error) {
       console.log(error);
     }
-    // fetchData();
   };
   
   const clearData = () => {
@@ -153,7 +150,7 @@ const NewCampaigns = () => {
         <div className="flex flex-wrap gap-[40px]">
           <FormFieldCamapigns 
             LabelName="Goal *"
-            placeholder="ETH 0.50"
+            placeholder="GLMR 100"
             inputType="text"
             value={isWebForm.goals}
             handleChange={(e) => handleFormFieldChange('goals', e)}

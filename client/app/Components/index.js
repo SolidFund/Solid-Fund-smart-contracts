@@ -21,6 +21,15 @@ import HomeCard from './HomeCard'
 import UserDisplayCampaigns from './UserDisplayCampaigns'
 import CountBox from './CountBox'
 import About from './About'
+import CustomButtomMovil from './CustomButtomMovil'
+import CustomLogo from './CustomLogo'
+import NavigateLinks from './NavigateLinks'
+import NavigateLinksMovile from './NavigateLinksMovile'
+import CustomTitle from './CustomTitle'
+import CustomSearchBar from './CustomSearchBar'
+import NavbarDesktop from './NavbarDesktop'
+import CustomImageFolder from './CustomImageFolder'
+
 
 export {
     NavBar,
@@ -45,5 +54,13 @@ export {
     HomeCard,
     UserDisplayCampaigns,
     CountBox,
-    About
+    CustomButtomMovil,
+    About,
+    CustomLogo,
+    NavigateLinks,
+    NavigateLinksMovile,
+    CustomTitle,
+    CustomSearchBar,
+    NavbarDesktop,
+    CustomImageFolder
 }

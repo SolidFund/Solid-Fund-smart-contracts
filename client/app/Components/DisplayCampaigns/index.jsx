@@ -4,7 +4,6 @@ import Image from 'next/image'
 import  loader  from '@/public/assets/loader.svg'
 import HomeCard from '../HomeCard'
 const DisplayCampaigns = ({title, isLoading, campaigns, params  }) => {
-  
   return (
     <div>
         <div className='flex justify-center pt-4'>
