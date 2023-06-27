@@ -140,7 +140,9 @@ Users can retract their pledge if the campaign is in an invalid or finished stat
 
 ### Campaign Status Updates
 
-The contract automatically updates the status of campaigns based on the start and end dates, goal validations, and funding achievements by using ChainLink Automation.
+The contract automatically updates the status of campaigns based on the start and end dates, goal validations, and funding achievements by using OpenZepplin Defender.
+
+![automation](docs/images/campaign/status.png)
 
 ### Goal Claiming
 
