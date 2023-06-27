@@ -79,10 +79,13 @@ https://moonbest.vercel.app/
 
 ## Our Team
 
-Leandro Palazzolo - lea.palazzolo@gmail.com - https://github.com/leapalazzolo
-Matias Guagliardo - matias.guagliardo@gmail.com - https://github.com/Mattteus1
-Gustavo Matta - linkzelda2016o@gmail.com - https://github.com/BetX19
-Robert Medina - csoperativo@gmail.com - https://github.com/shaggyt85
+- Leandro Palazzolo - lea.palazzolo@gmail.com - https://github.com/leapalazzolo
+
+- Matias Guagliardo - matias.guagliardo@gmail.com - https://github.com/Mattteus1
+
+- Gustavo Matta - linkzelda2016o@gmail.com - https://github.com/BetX19
+
+- Robert Medina - csoperativo@gmail.com - https://github.com/shaggyt85
 
 ## Our Plans for the Future
 
