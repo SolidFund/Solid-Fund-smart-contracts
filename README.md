@@ -194,6 +194,8 @@ The user who donates to a campaign.
 
 We're using OpenZeppelin Defender (Relayer and Autotask) to automate the execution of the method "updateCampaigns".
 
+![automation](docs/images/automation.png)
+
 ![relayer](docs/images/openzeppelin/relayer.png)
 ![autotaskautomation](docs/images/openzeppelin/autotask.png)
 
