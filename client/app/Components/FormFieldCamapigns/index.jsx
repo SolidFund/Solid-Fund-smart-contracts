@@ -24,7 +24,7 @@ const FormFieldCamapigns = ({LabelName,
         />
       ) : (
         <input
-          required
+        required
           value={value}
           onChange={handleChange}
           type={inputType}

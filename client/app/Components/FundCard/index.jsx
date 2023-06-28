@@ -3,7 +3,7 @@ import React from 'react'
 import { FaEthereum } from 'react-icons/fa'
 import { useThemeContext } from '../../Context/GetCampaigns';
 import  folder  from '@/public/assets/folder.svg'
-import Logo from '@/public/assets/Logo.jpg'
+import Logo from '../../../public/assets/Logo.jpg'
 import Image from "next/image";
 
 const FundCard = ({owner, target, votes, id, params}) => {
@@ -24,8 +24,8 @@ if (item) {
 </div>
 </div>
 <div className="block p-2">
-  <h3 className="font-epilogue font-semibold text-[1rem] text-left leading-[1.625rem] truncate">Titulo: <span className='font-normal'>{item.title}</span> </h3>
-  <h3 className="font-epilogue font-semibold text-[1rem]  text-left leading-[1.625rem] truncate">Nombre: <span className='font-normal'> {item.name}</span> </h3>
+  <h3 className="font-epilogue font-semibold text-[1rem] text-left leading-[1.625rem] truncate">Tittle: <span className='font-normal'>{item.title}</span> </h3>
+  <h3 className="font-epilogue font-semibold text-[1rem]  text-left leading-[1.625rem] truncate">Name: <span className='font-normal'> {item.name}</span> </h3>
   <p className="mt-[5px] font-epilogue font-semibold  text-left leading-[1.625rem] truncate">Story: <span className='font-normal'>{item.description}</span></p>
 </div>
 <div className="flex justify-between flex-wrap gap-2 p-2">

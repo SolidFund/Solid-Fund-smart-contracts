@@ -1,4 +1,4 @@
-
+'use client'
 import React from 'react'
 import { useThemeContext } from '../../Context/GetCampaigns'
 import DisplayCampaigns from '../DisplayCampaigns'
